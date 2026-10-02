@@ -9,7 +9,7 @@
              Title="ViagemPage">
 
     <Grid RowDefinitions="*, Auto, Auto"
-          Padding="0">
+          Padding="20">
 
         <CarouselView Grid.Row="0"
                       Loop="False"
@@ -62,10 +62,10 @@
         <Grid Grid.Row="2"
               ColumnDefinitions="*,*"
               ColumnSpacing="15"
-              Margin="20,0,20,20">
+              Margin="10,15,10,20">
 
             <Button Grid.Column="0"
-                    Text="Anterior"
+                    Text="Get started"
                     Command="{Binding PreviousPositionCommand}"
                     BackgroundColor="#FF1568"
                     TextColor="White"
@@ -73,13 +73,14 @@
                     HeightRequest="50" />
 
             <Button Grid.Column="1"
-                    Text="Próximo"
+                    Text="Next"
                     Command="{Binding NextPositionCommand}"
                     IsVisible="{Binding ShowButton}"
                     BackgroundColor="#4EA717"
                     TextColor="White"
                     CornerRadius="10"
-                    HeightRequest="50" />
+                    HeightRequest="50"
+                   />
 
         </Grid>
 
